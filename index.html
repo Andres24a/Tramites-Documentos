@@ -1,52 +1,115 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Mi Trámite, Mi Derecho</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #eef2f7;
-            text-align: center;
-            padding: 40px;
-        }
-        h1 {
-            color: #2c3e50;
-            margin-bottom: 10px;
-        }
-        p {
-            font-size: 18px;
-            color: #34495e;
-            margin-bottom: 30px;
-        }
-        .button {
-            display: block;
-            width: 300px;
-            margin: 15px auto;
-            padding: 18px;
-            font-size: 18px;
-            color: white;
-            background-color: #2980b9;
-            border: none;
-            border-radius: 10px;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-        }
-        .button:hover {
-            background-color: #1c5980;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Mi Trámite, Mi Derecho</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fuente agradable -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #e8f0ff 0%, #f9f9f9 100%);
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #1a3e5c;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      width: 100%;
+      max-width: 960px;
+      margin-top: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      text-align: center;
+      padding: 30px 20px;
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-decoration: none;
+      color: inherit;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+    .card .icon {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      color: #2a6f97;
+    }
+    .card h2 {
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+    }
+    .card p {
+      font-size: 0.95rem;
+      color: #666;
+    }
+    footer {
+      margin-top: auto;
+      padding: 15px 0;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
 </head>
 <body>
+  <header>
     <h1>Mi Trámite, Mi Derecho</h1>
-    <p>Selecciona el documento que deseas solicitar:</p>
+    <p>Selecciona el documento que deseas solicitar de forma rápida y fácil</p>
+  </header>
 
-    <a class="button" href="https://registraduria.gov.co/" target="_blank">📄 Solicitar Registro Civil</a>
-    <a class="button" href="https://miportal.eps.gov.co/certificados" target="_blank">📄 Certificado de EPS</a>
-    <a class="button" href="https://antecedentes.policia.gov.co/" target="_blank">📄 Antecedentes Judiciales</a>
-    <a class="button" href="https://www.colpensiones.gov.co/" target="_blank">📄 Certificado de Pensión</a>
-    <a class="button" href="https://www.noticiasrcn.com/colombia/como-sacar-duplicado-de-la-cedula-en-linea-400114" target="_blank">📄 Duplicado de Cédula</a>
+  <div class="cards">
+    <a class="card" href="https://registraduria.gov.co/" target="_blank">
+      <div class="icon">📜</div>
+      <h2>Registro Civil</h2>
+      <p>Obtén tu partida de nacimiento o matrimonio</p>
+    </a>
+    <a class="card" href="https://miportal.eps.gov.co/certificados" target="_blank">
+      <div class="icon">🏥</div>
+      <h2>Certificado de EPS</h2>
+      <p>Descarga tu certificación de afiliación</p>
+    </a>
+    <a class="card" href="https://antecedentes.policia.gov.co/" target="_blank">
+      <div class="icon">👮</div>
+      <h2>Antecedentes Judiciales</h2>
+      <p>Consulta y descarga tu certificado</p>
+    </a>
+    <a class="card" href="https://www.colpensiones.gov.co/" target="_blank">
+      <div class="icon">💼</div>
+      <h2>Certificado de Pensión</h2>
+      <p>Obtén tu historial de aportes</p>
+    </a>
+    <a class="card" href="https://www.noticiasrcn.com/colombia/como-sacar-duplicado-de-la-cedula-en-linea-400114" target="_blank">
+      <div class="icon">🆔</div>
+      <h2>Duplicado de Cédula</h2>
+      <p>Renueva o recupera tu documento de identidad</p>
+    </a>
+  </div>
 
+  <footer>
+    © 2025 Mi Trámite, Mi Derecho. Todos los derechos reservados.
+  </footer>
 </body>
 </html>
