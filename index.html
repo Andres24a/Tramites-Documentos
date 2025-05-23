@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trámites para Personas Mayores</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #004aad;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 28px;
+    }
+    nav {
+      text-align: center;
+      background-color: #cce5ff;
+      padding: 10px;
+    }
+    nav a {
+      margin: 10px;
+      text-decoration: none;
+      color: white;
+      background-color: #0074d9;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-size: 18px;
+    }
+    main {
+      padding: 20px;
+    }
+    section {
+      background: white;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 5px gray;
+    }
+    input, button, select {
+      font-size: 18px;
+      padding: 10px;
+      margin-top: 10px;
+      width: 100%;
+      max-width: 400px;
+      display: block;
+    }
+    button {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #004aad;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    Trámites para Personas Mayores
+  </header>
+  <nav>
+    <a href="#formulario">Solicitar Trámite</a>
+    <a href="#ayuda">Ayuda</a>
+  </nav>
+  <main>
+    <section id="formulario">
+      <h2>Formulario de Solicitud</h2>
+      <form action="/solicitar" method="post">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <label for="documento">Número de documento:</label>
+        <input type="text" id="documento" name="documento" required>
+        <label for="tramite">Tipo de trámite:</label>
+        <select id="tramite" name="tramite" required>
+          <option value="cedula">Cédula nueva o duplicado</option>
+          <option value="certificado">Certificados</option>
+          <option value="salud">Afiliación salud/pensión</option>
+        </select>
+        <button type="submit">Enviar solicitud</button>
+      </form>
+    </section>
+    <section id="ayuda">
+      <h2>¿Necesita ayuda?</h2>
+      <p>Escríbanos a <a href="mailto:ayuda@tramitesmayores.org">ayuda@tramitesmayores.org</a> o llámenos al <strong>01 8000 123 456</strong>.</p>
+    </section>
+  </main>
+  <footer>
+    © 2025 Trámites Mayores. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
